@@ -9,6 +9,20 @@ Version: 0.1.1
 */
 
 
+/* Defining fonts 
+
+@font-face { 
+	font-family: Social; 
+	src: url('fonts/ss-social-regular.ttf'); 
+} 
+
+#menu-primary-navigation li span {
+	font-family: Social !important;
+} 
+
+Can uncomment this if we ever want to use it. */
+
+
 /* Logo-ify header */
 
 #branding { 
