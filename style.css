@@ -1039,12 +1039,14 @@ a:hover {
 .comment-content h3 {
 	font-size: 12px;
 	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 .entry-content h4,
 .comment-content h4 {
 	font-size: 10px;
 	font-size: 1rem;
+	font-weight: bold;
 }
 
 .entry-content table,
