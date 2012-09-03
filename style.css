@@ -1291,7 +1291,13 @@ object {
 }
 #author-description {
 	float: left;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
 	margin-left: 108px;
+	width: 480px;
+}
+#author-description.last {
+	margin-bottom: 0;
 }
 #author-description h2 {
 	color: #000;

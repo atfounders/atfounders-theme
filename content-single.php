@@ -58,20 +58,20 @@
 			$i = 0;
 			
 			foreach ( $authors as $author ) {
-			?>
+				if ( ++$i === $num ) { $last = 'true'; } ?>
 			
-			<div id="author-avatar"<?php if( ++$i === $num ) { echo ' class="last"'; } ?>>
-				<?php echo get_avatar( $author, apply_filters( 'twentyeleven_author_bio_avatar_size', 68 ) ); ?>
-			</div><!-- #author-avatar -->
-			<div id="author-description">
-				<h2><?php printf( __( 'About %s', 'twentyeleven' ), get_the_author_meta( 'user_firstname', $author ) ); ?></h2>
-				<?php the_author_meta( 'description', $author ); ?>
-				<div id="author-link">
-					<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID', $author ) ) ); ?>" rel="author">
-						<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'twentyeleven' ), get_the_author_meta( 'display_name', $author ) ); ?>
-					</a>
-				</div><!-- #author-link	-->
-			</div><!-- #author-description -->
+				<div id="author-avatar"<?php if ( $last === 'true') { echo ' class="last"'; } ?>>
+					<?php echo get_avatar( $author, apply_filters( 'twentyeleven_author_bio_avatar_size', 68 ) ); ?>
+				</div><!-- #author-avatar -->
+				<div id="author-description"<?php if ( $last === 'true' ) { echo ' class="last"'; } ?>>
+					<h2><?php printf( __( 'About %s', 'twentyeleven' ), get_the_author_meta( 'user_firstname', $author ) ); ?></h2>
+					<?php the_author_meta( 'description', $author ); ?>
+					<div id="author-link">
+						<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID', $author ) ) ); ?>" rel="author">
+							<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'twentyeleven' ), get_the_author_meta( 'display_name', $author ) ); ?>
+						</a>
+					</div><!-- #author-link	-->
+				</div><!-- #author-description -->
 			
 			<?php } ?>
 
