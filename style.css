@@ -2538,6 +2538,29 @@ p.comment-form-comment {
 	font-weight: bold;
 }
 
+/* Author bios */
+
+#author-info {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	width: 100%;
+}
+
+#author-avatar {
+	clear: both;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	margin-left: 10px;
+	margin-left: 1rem;
+}
+
+#author-avatar.last {
+	margin-bottom: 0;
+}
+
+
 /* =Print
 ----------------------------------------------- */
 
