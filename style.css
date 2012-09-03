@@ -800,7 +800,8 @@ a:hover {
 #access .current-menu-item > a,
 #access .current-menu-ancestor > a,
 #access .current_page_item > a,
-#access .current_page_ancestor > a {
+#access .current_page_ancestor > a,
+#access .current_page_parent > a {
 	font-weight: bold;
 }
 
